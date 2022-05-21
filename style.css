@@ -1,0 +1,90 @@
+/* add css here */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Jost";
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+.wrapper{
+    position: relative;
+    top:32px;
+    margin:auto;
+    max-width: 475px;
+    padding: 24px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+}
+h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom:24px;
+}
+.field{
+    display:flex;
+    justify-content: end;
+    margin: 10px;
+}
+
+.name{
+    margin-right: 15px;
+}
+
+input{
+    width: 45%;
+    border-radius:5px;
+    border:1px solid #dadada;
+}
+
+.checkbox{
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 8px 0;
+    border-radius: 5px;
+    margin-top: 24px;
+}
+.checkbox input{
+    width:auto;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.clear{
+    background-color: hsl(333deg, 100%, 44%);
+    color:white;
+    border-radius: 10px;
+    width: 30%;
+    padding: 10px 0;
+}
+
+.submit{
+    background-color: hsl(256deg, 100%, 44%);
+    color:white;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.error{
+    font-weight: bold;
+    margin: 10px 0px;
+    background-color: hsla(333deg, 100%, 44%, 0.25);
+    text-align:center;
+    border-radius: 5px;
+    display: none;
+    padding: 8px 0;
+}

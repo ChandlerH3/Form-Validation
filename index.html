@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+    href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap"
+    rel="stylesheet"/>
+    <title>Signup Form</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Signup Form</h1>
+      <form id="form">
+        <div class="field">
+          <label for="name" id="name" class="name">Full name:</label>
+          <input type="text" autocomplete="name" required />
+        </div>
+        <div class="field">
+          <label for="address" id="address" class="name">Street address:</label>
+          <input type="text" autocomplete="street-address" required />
+        </div>
+        <div class="field">
+          <label for="email" id="email" class="name">Email address:</label>
+          <input type="email" autocomplete="email" required />
+        </div>
+        <div class="field">
+          <label for="number" id="number" class="name">Phone number:</label>
+          <input type="tel" autocomplete="tel" required />
+        </div>
+        <div class="field">
+          <label for="pw"  class="name">Password:</label>
+          <input type="password" autocomplete="new-password" required id="pw" />
+        </div>
+        <div class="field">
+          <label for="pw1" class="name">Confirm Password:</label>
+          <input type="password" autocomplete="new-password" id="pw1" required />
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="checkbox" required />
+          <label for="statement" id="statement"> I agree to the <a href="#">terms of service</a>. </label>
+        </div>
+        <div id="error" class="error">Your password is too short! How about "<span id="suggest"></span>"?</div>
+        <div id="error1" class="error">Your passwords didn't match. Please provide the same password in each field.</div>
+        <footer class="button">
+          <button class="clear" id="clear">Clear</button>
+          <button class= "submit" type="submit" id="submit">Submit</button>
+        </footer>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
